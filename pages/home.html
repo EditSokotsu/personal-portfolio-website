@@ -1,0 +1,123 @@
+<!-- @AUTH: EditSokotsu
+@PROJ: freeCodeCamp | Personal Portfolio
+@COMM: this is a freeCodeCamp certification project. It implements a homepage for a personal portfolio site. The main content consists of past course projects. See the user stories below. --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDiT Portfolio - Home</title>
+    <link rel="shortcut icon" href="../icons/EDiT emblem - black - favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+    <!-- START NAV -->
+    <nav id="nav-prim" class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/EDiT emblem - whitesmoke.svg" alt="logo" width="36" height="36" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                    <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Work
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Work Page</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+    <!-- START WELCOME SECTION -->
+    <section id="welcome-section">
+        <h1 id="welcome-title">WELCOME</h1>
+        <p id="welcome-text">Thank you for being here. I go by many names. Here, please call me EDiT.</p>
+    </section>
+    <!-- END WELCOME SECTION -->
+    <!-- START PROJECTS SECTION -->
+    <section id="work-section">
+        <h2>WHO IS EDiT?</h2>
+        <p>EDiT is one face of our creative persona. It encapsulates the more technical aspects of design. Web development is one branch on the tree of skills we are building, but we are also involved with graphic design and content writing. This site is made to show our work.</p>
+        <h3 id="projects-title">Here are some of things we have worked on.</h3>
+        <!-- carousel of projects -->
+
+      <div id="project-carousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center p-4">
+                <a href="taskTracker.html">TASK MANAGER</a>
+                <p>a simple task manger</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <a href="technicalDocument.html">TECHNICAL DOCUMENT</a>
+                <p>the summary of the Kama Sutra written as a technical document</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <a href="quizGame.html">QUIZ GAME</a>
+                <p>a simple web pae implementing a quiz game</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+    <!-- STARTS PROFILE SECTION -->
+    <section id="profile">
+        <h3 id="profile-title">If you want to see more of us, we are on these platforms</h3>
+        <div id="profile-links">
+            <a class="profile-link" href="mailto:seto.sokotsu@gmail.com" target="_blank">
+                <i class="bi bi-envelope-at-fill"></i> Email
+            </a>
+            <a class="profile-link" href="https://x.com/seto_ix" target="_blank">
+                <i class="bi bi-twitter-x"></i> Twitter
+            </a>
+            <a id="profile-link" class="profile-link" href="https://github.com/EditSokotsu" target="_blank">
+                <i class="bi bi-github"></i> Github
+            </a>
+        </div>
+        
+    </section>
+    <!-- END OF PROFILE SECTION -->
+    <!-- START OF FOOTER -->
+    <footer id="footer">
+            <p class="footer-text">Created by EDiTSokotsu</p>
+            <ul>
+                <li><a class="footer-link" href="#">Home</a></li>
+                <li><a class="footer-link" href="work.html">Work</a></li>
+                <li><a class="footer-link" href="#">Contact</a></li>
+            </ul>
+    </footer>
+    <!-- END OF FOOTER -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html> 

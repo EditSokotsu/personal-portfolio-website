@@ -1,0 +1,125 @@
+<!-- 
+@AUTH: SetoSokotsu
+@PROJ: Quiz Game Webpage
+@COMM: a simple HTML quiz game. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Game</title>
+        <link rel="shortcut icon" href="../icons/EDiT emblem - black - favicon.svg" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/quizGameStyles.css">
+        <link rel="stylesheet" href="../styles/home.css">
+    </head>
+    <body>
+        <!-- START NAV -->
+        <nav id="nav-prim" class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/EDiT emblem - whitesmoke.svg" alt="logo" width="36" height="36" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Work
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Work Page</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAV -->
+        <div id="game-wrapper">
+            <div id="start-screen">
+                <span id="welcome-screen" class="hidden">
+                    <h1 id="welcome-msg">
+                        WELCOME TO THE GAME!
+                    </h1>
+                    <p id="welcome-msg-subtext">It's a 10 question quiz, testing your general knowledge. The rules are simple: ANSWER ALL THE QUESTIONS as best you can.
+                    </p>
+                    <p id="good-luck-msg">GOOD LUCK!</p>
+                    <span id="player-info">
+                        <label for="player-name">Please pick a profile name:</label>
+                        <input type="text" id="player-name">
+                        <button id="player-name-submit-btn" class="btn">Submit</button>
+                    </span>
+                </span>
+                <span id="ready-screen">
+                    <h3>ARE YOU READY?</h3>
+                    <button id="start-game-btn" class="btn">Start</button>
+                </span>
+            </div>
+            <div id="main-game-screen" class="hidden">
+                <div id="HUD">
+                    <!-- <span class="HUD-item">Name: <span id="player-name"></span>
+                    </span> -->
+                    <span class="HUD-item">Question: <span id="question-number"></span></span>
+                    <span class="HUD-item">Score: <span id="score"></span></span>
+                </div>
+                <div id="question-container">Lorem ipsum dolor sit amet, quo et nobis omnium scriptorem.</div>
+                <div id="answer-options">
+    
+                    <span class="option">
+                        <input type="radio" name="option" id="optionA" value="">
+                        <label for="optionA" class="answer" id="answer-A">Lorem</label>
+                    </span>
+    
+                    <span class="option">
+                        <input type="radio" name="option" id="optionB" value="">
+                        <label for="optionB" class="answer" id="answer-B">ipsum</label>
+                    </span>
+                    
+                    <span class="option">
+                        <input type="radio" name="option" id="optionC" value="">
+                        <label for="optionC" class="answer"  id="answer-C">dolor</label>
+                    </span>
+                    
+                    <span class="option">
+                        <input type="radio" name="option" id="optionD" value="">
+                        <label for="optionD" class="answer" id="answer-D">sit</label>
+                    </span>
+                    
+                </div>
+                <div id="controls">
+                    <button id="next-btn" class="btn">next</button>
+                </div>
+            </div>
+            <div id="finish-screen" class="hidden">
+                <p>Your Score:</p>
+                <h3 id="final-score">SCORE</h3>
+                <p id="end-msg">Lorem ipsum dolor sit amet, quo et nobis omnium scriptorem.</p>
+                <button id="play-again-btn" class="btn">Play Again</button>
+                <button id="quit-btn" class="btn">Quit</button>
+            </div>
+        </div>
+        <!-- START OF FOOTER -->
+        <footer id="footer">
+                <p class="footer-text">Created by EDiTSokotsu</p>
+                <ul>
+                    <li><a class="footer-link" href="#">Home</a></li>
+                    <li><a class="footer-link" href="work.html">Work</a></li>
+                    <li><a class="footer-link" href="#">Contact</a></li>
+                </ul>
+        </footer>
+        <!-- END OF FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="../scripts/quizGameJS.js"></script>
+    </body>
+</html>

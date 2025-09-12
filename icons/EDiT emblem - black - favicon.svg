@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="145.69167mm"
+   height="145.6917mm"
+   viewBox="0 0 145.69167 145.6917"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
+   sodipodi:docname="EDiTsokotsu emblem.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.692921"
+     inkscape:cx="311.72385"
+     inkscape:cy="844.25209"
+     inkscape:window-width="1247"
+     inkscape:window-height="755"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid5"
+       units="mm"
+       originx="-27.154167"
+       originy="-2.7791531"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#ff8f00"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="10"
+       enabled="true"
+       visible="true" />
+    <inkscape:page
+       x="0"
+       y="-3.3137128e-14"
+       width="145.69167"
+       height="145.69168"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-27.154168,-2.7791532)">
+    <g
+       id="g1"
+       inkscape:export-filename="../CODE (&amp; other code-y things)/Personal Portfolio Website/icons/EDiT emblem - black - favicon.svg"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150">
+      <circle
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:5.29167;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         cx="100.00001"
+         cy="75.624992"
+         r="70.200005" />
+      <path
+         id="rect1"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.8522"
+         d="M 70.000001,39.999999 80.000002,54.249996 H 120.00001 L 130,39.999999 Z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="path3"
+         style="opacity:1;fill:#000000;stroke:none;stroke-width:0.8522"
+         d="M 70.000001,68.499993 80.000002,82.749989 H 120.00001 L 130,68.499993 Z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="path4"
+         style="opacity:1;fill:#000000;stroke:none;stroke-width:1.04373"
+         d="M 55.000002,111.24998 70.000003,96.999986 H 130 l 15.00001,14.249994 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="path6"
+         style="opacity:1;fill:#000000;stroke:none;stroke-width:0.229829"
+         d="m 119.95335,54.319835 -1.16435,-0.809288 25.02971,-36.011136 1.16435,0.809284 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="path7"
+         style="opacity:1;fill:#000000;stroke:none;stroke-width:0.190888"
+         d="m 44.491809,122.73238 -0.798903,-0.86593 26.511248,-24.960901 0.798904,0.865934 z"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+  </g>
+</svg>

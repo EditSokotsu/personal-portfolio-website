@@ -1,0 +1,204 @@
+/* 
+@AUTH: SetoSokotsu
+@PROJ: Quiz Game Webpage
+@COMM: a simple HTML quiz game. 
+
+@TODO:  - clickable labels
+        - media queries (larger screens)
+            * center the main game screen on all screen sizes
+            * general quality of life stuff (ie. scale to screen)
+*/
+*{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+body{
+    background-color: whitesmoke;
+    /* overflow: hidden; */
+}
+
+.hidden{
+    display: none !important;
+}
+
+.btn{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 2px 2px 3px #6495ed;
+}
+
+.btn:disabled{
+    border: 1px solid white;
+    background-color: lightgray;
+    color: white;
+    cursor: not-allowed;
+}
+
+#game-wrapper{
+    border: 3px solid rgb(27, 27, 27);
+    border-radius: 10px;
+    margin: 20vh auto;
+}
+
+
+/* @comm: welcome screen */
+#start-screen{
+    text-align: center;
+}
+
+#welcome-msg{
+    font-size: 2.5rem;
+}
+
+#welcome-msg-subtext{
+    font-size: .7rem;
+}
+
+#good-luck-msg{
+    font-size: 1.1rem;
+}
+
+#player-info label{
+    margin-bottom: 3px;
+    display: block;
+}
+
+#player-name{
+    width: 65%;
+}
+
+#player-info button{
+    padding: 4px;
+    margin: 10px auto;
+    display: block;
+    width: 50%;
+}
+
+/* @comm: ready screen styles */
+#ready-screen h3{
+    font-size: 4rem;
+}
+
+#start-game-btn{
+    padding: 2% 25%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+/* @comm: main game screen styles */
+#HUD{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HUD-item{
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.HUD-item:nth-of-type(2){
+    margin-left: auto;
+}
+
+#question-container{
+    padding: 10px;
+    border: 1.8px solid gray;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#answer-options{
+    margin: 2%;
+}
+
+.option{
+    padding: 2%;
+    display: block;
+}
+
+.answer{
+    padding: 2% 5%;
+}
+
+#controls{
+    padding: 2%;
+    border: 1.8px solid gray;
+    margin: 2%;
+}
+
+#next-btn{
+    margin: auto;
+    height: 50%;
+    width: 95%;
+    display: block;
+}
+
+/* @comm: finish screen styles */
+#finish-screen{
+    text-align: center;
+}
+
+#finish-screen p{
+    font-size: 2rem;
+}
+
+#final-score{
+    font-size: 3rem;
+}
+
+#finish-screen #end-msg{
+    margin: -8% auto 1%;
+    font-size: .8rem;
+}
+
+#play-again-btn, #quit-btn{
+    margin: 3% auto;
+}
+
+#play-again-btn{
+    padding: 1.2% 3%
+}
+
+#quit-btn{
+    padding: 1.2% 8%;
+}
+
+@media (min-width: 576px){
+    #game-wrapper{
+        width: 65%;
+    }
+}
+
+@media (min-width: 700px){
+    .HUD-item, .answer, .btn, #start-game-btn, #question-number, #score{
+        font-size: 2rem;
+    }
+
+    #play-again-btn, #quit-btn, #question-container{
+        font-size: 3rem
+    }
+
+    #final-score{
+        font-size: 5.5rem;
+    }
+
+    #finish-screen #end-msg{
+        margin: -8% auto 4%;
+        font-size: 1.5rem;
+    }
+
+    #ready-screen h3{
+        font-size: 6rem;
+    }
+}
