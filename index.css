@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+body, html{
+    min-height: 100vh;
+}
+
+body{
+    background-image: url('images/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#landing-container{
+    position: absolute;
+    top: 0;
+    background-color: rgba(116, 115, 115, 0.911);
+    backdrop-filter: blur(15px);
+    height: 100%;
+    width: 100%;
+}
+
+#logo-landing{
+    margin: 5px auto;
+    display: block;
+    height: 65%;
+    width: 90%;
+    object-fit: contain;
+}
+
+h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#landing-controls{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing-btn{
+    border: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.landing-btn a{
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.landing-btn a:hover{
+    border: 1px solid #1b1b1b;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px #333232;
+    text-shadow: 
+            0 0 10px #00bcd4, /* Green glow */
+            0 0 20px #00bbd4,
+            0 0 30px #00bcd4;
+    background-color: #333232;
+}
+
+/* custom scrollbar styles start here */
+
+ /* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
+/* custom scrollbar styles end here */
+
+@media screen and (min-width: 560px) {
+    #landing-controls{
+        justify-content: space-around;
+    }
+
+    .landing-btn a{
+        padding: 10px 160px;
+    }
+}
