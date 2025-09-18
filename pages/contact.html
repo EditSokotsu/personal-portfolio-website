@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Tutorial</title>
+    <title>EDiT Portfolio - Contact Page</title>
     <link rel="shortcut icon" href="../icons/EDiT emblem - black - favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/taskTracker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <!-- START NAV -->
@@ -36,21 +37,25 @@
         </div>
     </nav>
     <!-- END NAV -->
-    <h1>TODO App</h1>
-    <div id="container">
-        <div id="task-input-container">
-            <input type="text" name="task-input" id="task-input">
-            <button type="button" class="btn" id="add-task-btn" onclick="createTask()">Add</button>
+    <h1>We'd love to hear from you.</h1>
+    <p>Presently, these are the best ways to get in touch with us and follow our work. Reach out, anytime; we look forward to it.</p>
+    <!-- STARTS PROFILE SECTION -->
+    <section id="profile">
+        <div id="profile-links">
+            <a class="profile-link" href="mailto:seto.sokotsu@gmail.com" target="_blank">
+                <i class="bi bi-envelope-at-fill"></i> Email
+            </a>
+            <a class="profile-link" href="https://x.com/seto_ix" target="_blank">
+                <i class="bi bi-twitter-x"></i> Twitter
+            </a>
+            <a id="profile-link" class="profile-link" href="https://github.com/EditSokotsu" target="_blank">
+                <i class="bi bi-github"></i> Github
+            </a>
         </div>
-        <dialog id="edit-form">
-            <img src="close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="close button for edit form" id="edit-form-close">
-            <input type="text" name="edit-input" id="edit-input">
-            <button type="button" class="btn" id="update-btn">Update</button>
-        </dialog>
-        <div id="tasks-container">
-            <!-- tasks go here -->
-        </div>
-    </div>
+        
+    </section>
+    <!-- END OF PROFILE SECTION -->
+
     <!-- START OF FOOTER -->
     <footer id="footer">
             <p class="footer-text">Created by EDiTSokotsu</p>
@@ -62,6 +67,5 @@
     </footer>
     <!-- END OF FOOTER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="../scripts/taskTracker.js"></script>
 </body>
 </html>
